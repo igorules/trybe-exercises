@@ -1,24 +1,36 @@
-  .caixa {
-    color: white;
-    display: inline-block;
-    line-height: 50px;
-    text-align: center;
-    vertical-align: top;
-  }
-
-  .width-and-height {
-    height: 50px;
-    width: 50px;
-  }
-
-.padding {
-    padding: 20px;
+.super-mario {
+    width: 200px;
+    position: absolute;
+    z-index: 2;
 }
 
-.margin {
-    margin: 30px;
+.goomba {
+    width: 200px;
+    position: absolute;
+    top: 360px;
+    z-index: 1;
 }
 
-.border {
-    border: 5px solid black;
-}  
+.bowser {
+    width: 270px;
+    position: absolute;
+    top: 170px;
+    left: 500px;
+    z-index: 3;
+}
+
+.baloon {
+    width: 120px;
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    z-index: 4;
+}
+
+.word {
+    position: absolute;
+    top: 150px;
+    left: 465px;
+    z-index: 5;
+    width: 80px;
+}
