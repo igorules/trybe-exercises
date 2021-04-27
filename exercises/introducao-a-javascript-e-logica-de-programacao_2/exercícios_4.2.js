@@ -1,17 +1,15 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let total = 0;
-let media = 0;
-for (let index = 0; index < numbers.length; index++) {
-    total += numbers[index];
+
+let impar = 0
+
+for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 2 !== 0) {
+        impar += 1;       
+    }
 }
 
-media = total / numbers.length;
-
-console.log(media);
-
-if (media > 20) {
-    console.log('valor maior que 20');
-} 
-else {
-    console.log('valor menor ou igual a 20');
+if (impar === 0) {
+    console.log('nenhum valor impar encontrado');
+} else {
+    console.log(impar);
 }
