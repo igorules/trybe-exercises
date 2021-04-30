@@ -1,15 +1,23 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-
-let impar = 0
-
-for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] % 2 !== 0) {
-        impar += 1;       
+//Duas formas de resolver o exercício
+function verificaPalindrome(palavra) {
+  let arrayLetras = palavra.split('');
+  let isPalindrome = true;
+  for (let index in arrayLetras) {
+    if (arrayLetras[index] != palavra[(palavra.length - 1) - index]) {
+      isPalindrome = false;
     }
+  }
+  return isPalindrome;
 }
 
-if (impar === 0) {
-    console.log('nenhum valor impar encontrado');
-} else {
-    console.log(impar);
+function verificaPalindrome(string) {
+  let reverse = string.split('').reverse().join('');
+  if (reverse === string) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
+console.log(verificaPalindrome('arara')); //true
+console.log(verificaPalindrome('desenvolvimento')); //false
