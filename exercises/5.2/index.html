@@ -57,7 +57,22 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+      let titulo = document.createElement('h1');
+      let textoTitulo = document.createTextNode("Exercício 5.2 -JavaScript DOM");
+      document.body.appendChild(titulo);
+      titulo.appendChild(textoTitulo);
+
+      let mainContent = document.createElement('div');
+      mainContent.classList.add('main-content');
+      document.body.appendChild(mainContent);
+
+      let centerContent = document.createElement('div');
+      centerContent.classList.add('center-content');
+      mainContent.appendChild(centerContent);
+
+      let paragrafo1 = document.createElement('p');
+      centerContent.appendChild(paragrafo1);
+      paragrafo1.innerText = 'Quem se apega a algo O perderá'
     </script>
   </body>
 </html>
